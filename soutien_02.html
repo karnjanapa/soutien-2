@@ -86,19 +86,11 @@
     <script type="text/javascript">
 
         // Your code here...
-        // function go () 
         
-        // {
-        //     //  Step 0: que faut-il écrire pour répondre à l'événement "onclick" ?
-
-        //     let number = document.getElementById("number").value
-        //     let result = document.getElementById("result").value
-        //     // Step 1: récupérer la valeur saisie
-        //    }
            function go () {
             // Step 1: Retrieve the input value
-            var number = document.getElementById('number').value;
-            var result = document.getElementById('result')
+            let number = document.getElementById('number').value;
+           
 
             // Step 2: Test the input value; should be a valid number between 5 and 15
             if (isNaN(number) || number < 5 || number > 15) {
@@ -107,7 +99,7 @@
             }
 
             // Step 3: Calculate the cube of the input value
-            var result = number * number * number;
+            let result = number * number * number;
 
             // Step 4: Display the result
             alert('The cube of the input value is: ' + result);
@@ -136,17 +128,7 @@
 
 // The different steps are recalled in the code.
 
-    //    ****thai
-
-//         เบื้องต้น: สิ่งที่ต้องทำ (หรือเขียน) เพื่อให้ดำเนินการจุดต่อไปนี้ทั้งหมดเมื่อกดปุ่ม "ไป!" เท่านั้น ?
-//     ดึงค่าที่ป้อน
-//     ทดสอบค่าที่ป้อน ต้องเป็นตัวเลขที่ถูกต้องระหว่าง 5 ถึง 15
-//     คำนวณลูกบาศก์ของค่าที่ป้อน
-//     เพื่อเป็นการเตือนความจำ ถ้าเราตั้งชื่อค่าที่ป้อน x ลูกบาศก์ของมันจะมีค่า x3 = x * x * x
-//     แสดงผลโดยใช้ฟังก์ชัน displayResult
-//     เพื่อการใช้งานที่ถูกต้อง โปรดอ่านความคิดเห็นและลายเซ็นต์ของฟังก์ชันนี้ (ใน tools.js) ยังไม่จำเป็นที่จะต้องเข้าใจการทำงานภายในของมัน
-
-// ขั้นตอนต่างๆ จะถูกเรียกคืนในโค้ด
+   
 
     </script>
 </body>
