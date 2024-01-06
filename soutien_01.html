@@ -87,19 +87,29 @@
         // Your code here......
 
         // Function declarations
+        // a and b of function hello called parameters
+        //resultOne = hello (2, 3); called arguments
+        //resultOne is 1
+       
+
 function hello(a, b) {
     return (2 * a) - b;
 }
 
 function hi(a) {
+     // The function `hi` takes a parameter `a` and returns the remainder when `a` squared is divided by 3.
     return (a * a) % 3;
 }
 
 // Testing the functions
 let resultOne = hello(2, 3);
+// resultOne:1
 let resultTwo = hi(4);
+//resultTwo: 1
 let resultThree = hi(hello(1, 4));
+//resultThree: 1 
 let resultFour = hello(resultTwo, hello(1, 4));
+// resultFour: 4
 
 // Displaying results
 console.log("resultOne:", resultOne);
