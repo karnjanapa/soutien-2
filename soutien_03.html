@@ -76,7 +76,28 @@
     <script type="text/javascript">
 
         // Your code here...
+        function go () {
+            // Step 1: Retrieve the input value
+            let number = document.getElementById('number').value;
 
+            // Step 2: Test the input value; should be a valid number between 5 and 15
+            if (isNaN(number) || number < 5 || number > 15) {
+                alert('Please enter a valid number between 5 and 15.');
+                return;
+            }
+
+         // je ne trouve pas cett code
+            // déléguer le calcul du cube d'une valeur x -> x3 
+
+            // Step 4: Display the result
+            alert('The cube of the input value is: ' + result);
+            }
+            // Step 3: Calculate the cube of the input value
+            let result = document.getElementById('result').value;
+            let x = parseFloat(result);
+            let xCubed = Math.pow(x, 3);
+
+            console.log(xCubed);
     </script>
 </body>
 
