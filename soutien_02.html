@@ -86,24 +86,61 @@
     <script type="text/javascript">
 
         // Your code here...
+        function go() {
+    // Step 1: Retrieve the input value
+    let number = document.getElementById('number').value;
+
+    // Step 2: Test the input value; should be a valid number between 5 and 15
+    if (isNaN(number) || number < 5 || number > 15) {
+        alert('Please enter a valid number between 5 and 15.');
+        return;
+    }
+
+    // Step 3: Calculate the cube of the input value
+    let result = number * number * number;
+
+    // Step 4: Display the result
+    alert('The cube of the input value is: ' + result);
+}
+
+function displayResult() {
+    let element = document.getElementById('result');
+    let message = 'The cube of the input value is:';
+  
+    let out = '<table class="display">\n<tr>\n<td>';
+    out += (message + " " + result);
+    out += '</td></tr>\n</table>\n</div>';
+    element.innerHTML = out;
+}
         
-           function go () {
-            // Step 1: Retrieve the input value
-            let number = document.getElementById('number').value;
+//            function go () {
+//             // Step 1: Retrieve the input value
+//             let number = document.getElementById('number').value;
            
 
-            // Step 2: Test the input value; should be a valid number between 5 and 15
-            if (isNaN(number) || number < 5 || number > 15) {
-                alert('Please enter a valid number between 5 and 15.');
-                return;
-            }
+//             // Step 2: Test the input value; should be a valid number between 5 and 15
+//             if (isNaN(number) || number < 5 || number > 15) {
+//                 alert('Please enter a valid number between 5 and 15.');
+//                 return;
+//             }
 
-            // Step 3: Calculate the cube of the input value
-            let result = number * number * number;
+//             // Step 3: Calculate the cube of the input value
+//             let result = number * number * number;
 
-            // Step 4: Display the result
-            alert('The cube of the input value is: ' + result);
-        }
+//             // Step 4: Display the result
+//             alert('The cube of the input value is: ' + result);
+
+           
+//         }
+//         function displayResult () 
+//         {
+//     let element = document.getElementById ('result');
+//     displayCard (element);
+//     let out = '<table class="display">\n<tr>\n<td>';
+//     out += (message + " " + result);
+//     out += '</td></tr>\n</table>\n</div>';
+//     element.innerHTML = out;
+// }
 
         // ***france
         //  Step 0: que faut-il écrire pour répondre à l'événement "onclick" ?
